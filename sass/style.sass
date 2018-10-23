@@ -1,0 +1,479 @@
+@import "vars"
+@import "fonts"
+@import "base"
+// @import "media"
+
+// HEADER
+
+.header
+	background-image: url(../img/header/header-BG.jpg)
+	background-size: cover
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	position: relative
+	&-overlay
+		background-color: rgba(#000, .83)
+		position: absolute
+		width: 100%
+		top: 0
+		left: 0
+		height: 100%
+	&-container
+		width: 1200px
+		height: 945px
+		z-index: 5
+		&_top-line
+			border-bottom: 1px solid rgba($white, .15)
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			padding: 32px 4px 25px 4px
+			&__nav
+				ul
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					li
+						margin: 5px 0 0 69px
+						a
+							padding: 30px 0 33px
+							border-bottom: 1px solid rgba($white, 0)
+							transition: $trs
+						a:hover
+							color: darken($white, 18%)
+							border-bottom: 1px solid rgba($white, 1)
+		&_text  
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			height: 90%
+			justify-content: center
+			align-items: center
+			// flex-wrap: nowrap
+			flex-direction: column
+			color: $white
+			h1
+				text-transform: uppercase
+				margin-top: -18px
+			p 
+				font-family: "Georgia-Italic"
+				font-style: italic
+				font-size: 2.1rem
+				margin-top: 10px
+	&-member
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		height: 120px
+		width: 100%
+		z-index: 5
+		&_login, &_register
+			width: 50%
+			position: relative
+			cursor: pointer
+			transition: $trs
+			a 
+				text-transform: uppercase
+				// font-family: 'Lato-Heavy', sans-serif
+				font-family: "Lato-Black_0", sans-serif
+				font-size: 1.3rem
+				display: block
+				padding-top: 45px
+		&_login
+			background-color: #21424a
+			&:hover 
+				background-color: lighten(#21424a, 10%)
+				&::after
+					background-color: lighten(#21424a, 10%)
+			&:focus
+				background-color: darken(#21424a, 5%)
+				&::after
+					background-color: darken(#21424a, 5%)
+			a 
+				padding-left: 208px
+			&::after
+				content: ""
+				display: block
+				height: 100%
+				width: 40px
+				background: #21424a
+				top: 0
+				right: 0
+				position: absolute
+				transform: skew(-13deg, 0)
+				z-index: 1
+				transition: $trs
+		&_register
+			background-color: #2fac6c
+			&:hover 
+				background-color: lighten(#2fac6c, 8%)
+				&::before
+					background-color: lighten(#2fac6c, 8%)
+			a 
+				padding-right: 200px
+			&::before
+				content: ""
+				display: block
+				height: 100%
+				width: 40px
+				background: #2fac6c
+				top: 0
+				left: 0
+				position: absolute
+				transform: skew(-13deg, 0)
+				transition: $trs
+
+// DOMAIN
+
+.domain
+	width: 100%
+	height: 494px
+	h3
+		font-family: "Lato-Black_0", sans-serif
+		margin-bottom: 23px
+		margin-top: 84px
+	p
+		color: $color-domain
+		font-family: "Montserrat-ExtraLight", sans-serif
+		margin-bottom: 47px
+	form
+		width: 886px
+		height: 50px
+		border: 1px solid $color-domainTable
+		text-align: left
+		// display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		// justify-content: space-between
+		margin-bottom: 40px
+		display: inline-block
+		span
+			color: #cdcdcd
+			font-family: "Lato-Light", sans-serif
+			border-right: 1px solid #eeeeee
+			height: 30px
+			display: inline-block
+			padding: 0 15px
+			margin-top: 12px
+			line-height: 1.8
+		input
+			// background-image: url(../img/domain/www.png)
+			// background-repeat: no-repeat
+			// background-position: 13px
+			// padding: 0 0 0 75px
+			background-color: transparent
+			padding: 0 12px
+			border: none
+			color: #868686
+			&::-webkit-input-placeholder
+				font-family: "Lato-Semibold", sans-serif
+				font-size: .95rem
+				&:focus
+					color: $white
+			&::-moz-placeholder
+				font-family: "Lato-Semibold", sans-serif
+				font-size: .95rem
+		select
+			position: relative
+			height: 30px
+			border: none
+			color: $color-domainText
+			outline: none
+			width: 85px
+			float: right
+			border-left: 1px solid $color-domainText
+			margin-top: 10px
+			padding: 0 12px
+			font-family: "Lato-Light", sans-serif
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			background-color: transparent
+			background-image: url(../img/domain/arrow-down.png)
+			background-repeat: no-repeat
+			background-position: 60px 13px
+			&::after
+				content: "\f107"
+				font-family: "FontAwesome"
+				position: absolute
+				top: 0
+				left: 0
+				color: $color-domainText
+			option
+				// font-family: "Lato-Light", sans-serif
+				color: $color-domainText
+	table
+		width: 888px
+		border: 1px solid $color-domainTable
+		display: inline-block
+		position: relative
+		&::after
+			content: ""
+			position: absolute
+			width: 94%
+			height: 83%
+			border-top: 15px solid $white
+			border-bottom: 15px solid $white
+			border-left: 25px solid $white
+			border-right: 25px solid $white
+			top: 1px
+			left: 1px
+		td
+			height: 92px
+			line-height: 92px
+			width: 220px
+			color: $color-domainText
+			position: relative
+			&:not(:last-child)::before
+					content: ""
+					width: 1px
+					height: 82px
+					background-color: $color-domainTable
+					position: absolute
+					right: -2px
+					top: 5px
+		.td-up
+			&::after
+				content: ""
+				width: 210px
+				height: 1px
+				background-color: $color-domainTable
+				position: absolute
+				right: 5px
+				bottom: -1px
+
+// PACKAGES
+.packages
+	height: 766px
+	background-color: $white
+	background-image: url(../img/package/package-BG.jpg)
+	background-repeat: no-repeat
+	background-position: 0 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	&-container
+		width: 1200px
+		height: 765px
+		// border-bottom: 1px dotted $color-domainTable
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.package
+			width: 255px
+			border-top: 5px solid $pack-yellow
+			background-color: $white
+			padding: 35px 0
+			margin-top: 10px
+			box-shadow: 0 0 10px rgba(black, .06)
+			transition: all .5s ease
+			&-icon
+				.fa
+					font-family: "FontAwesome"
+					color: $pack-yellow
+					border-top: 5px solid $pack-yellow
+					border-radius: 50%
+					padding: 15px
+			h4
+				text-transform: uppercase
+				margin: 25px 0 15px
+			&-price
+				border-top: 1px solid #b4b4b4
+				border-bottom: 1px solid #b4b4b4
+				margin: 0 28px
+				padding: 15px 0
+				p
+					font-family: "Lato-Light", sans-serif
+					text-align: left
+					color: #b4b4b4
+					padding-bottom: 20px
+					span 
+						color: $pack-yellow
+						font-family: "Lato-Semibold", sans-serif
+						float: right
+				p:last-child
+					padding: 0
+			p.package-cost
+				text-align: center
+				font-family: "Lato-Black_0", sans-serif
+				font-size: 1.75rem
+				color: #2c2c2c
+				border-bottom: 3px solid $pack-yellow
+				display: inline-block
+				margin-top: 16px
+				padding: 10px 20px 5px
+				sup
+					font-family: "Lato-Heavy", sans-serif
+					color: #2c2c2c
+					font-size: 1rem
+				span
+					color: #8d8d8d
+					font-size: .8rem
+					font-family: "Lato-Medium", sans-serif
+			a 
+				text-transform: uppercase
+				color: #282828
+				font-family: "Lato-Black_0", sans-serif
+				display: block
+				margin: 15px 0 5px
+				transition: $trs
+				&:hover
+					color: $pack-yellow
+			&:hover
+				transform: scale(1.1, 1.1)
+				box-shadow: 0 0 10px rgba($pack-yellow, 0.8)
+		.normal-package
+			border-top: 5px solid $pack-gray
+			&:hover
+				box-shadow: 0 0 10px rgba($pack-gray, 0.8)
+			.package-icon
+				.fa
+					color: $pack-gray
+					border-top: 5px solid $pack-gray
+			.package-price
+				p 
+					span
+						color: $pack-gray
+			p.package-cost
+				border-bottom: 3px solid $pack-gray
+			a
+				color: #282828
+				&:hover
+					color: $pack-gray
+		.big-package
+			border-top: 5px solid $pack-red
+			&:hover
+				box-shadow: 0 0 10px rgba($pack-red, 0.8)
+			.package-icon
+				.fa
+					color: $pack-red
+					border-top: 5px solid $pack-red
+			.package-price
+				p 
+					span
+						color: $pack-red
+			p.package-cost
+				border-bottom: 3px solid $pack-red
+			a
+				color: #282828
+				&:hover
+					color: $pack-red
+		.biggest-package
+			border-top: 5px solid $pack-green
+			&:hover
+				box-shadow: 0 0 10px rgba($pack-green, 0.8)
+			.package-icon
+				.fa
+					color: $pack-green
+					border-top: 5px solid $pack-green
+			.package-price
+				p 
+					span
+						color: $pack-green
+			p.package-cost
+				border-bottom: 3px solid $pack-green
+			a
+				color: #282828
+				&:hover
+					color: $pack-green
+
+// ABOUT
+
+.aboutUs
+	width: 100%
+	height: 400px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	.about
+		width: 1200px
+		padding: 100px 0
+		color: #747474
+		background-image: url(../img/about/about-top-border.png)
+		background-repeat-x: repeat
+		background-repeat-y: no-repeat
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		&-discription
+			width: 50%
+			background-image: url(../img/about/about-right-border.png)
+			background-repeat-x: no-repeat 
+			background-repeat-y: repeat 
+			background-position: 518px 0
+			text-align: left
+			h2
+				padding-bottom: 35px
+				span
+					font-family: "Lato-Semibold", sans-serif
+			p 
+				padding-right: 100px
+				color: #747474
+				font-family: "Lato-Thin", sans-serif
+		&-persons
+			width: 50%
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			padding: 8px 20px 0 55px
+			&_item
+
+				// display: inline-block
+				img
+					// width: 93px
+					// height: 93px
+					border-radius: 50%
+					border: 5px solid #e5e5e5
+					overflow: hidden
+					margin-bottom: 8px
+				&__name, &__profession
+					padding-bottom: 7px
+				&__social
+					a
+						color: #747474
+						padding-right: 20px
+						transition: $trs
+						&:hover
+							color: #1f89ba
+
+// COMMENTS
+
+.comments
+	background-image: url(../img/comments/comments-BG-small.jpg)
+	width: 100%
+	height: 190px
+
+
+
