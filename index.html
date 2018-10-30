@@ -4,19 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Ghost Host</title>
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-	<link rel="stylesheet" href="libs/owl.carousel.2.1.0/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/owl.carousel.2.1.0/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	
 </head>
 <body>
 
 	<header class='header'>
+		<h1>buy a new domain</h1>
 		<div class="header-overlay"></div>
-		<div class="header-container">
+		<div class="header-container container">
 			<div class="header-container_top-line">
 				<div class="header-container_top-line__logo"><a href="#"><img src="img/header/header-LOGO.png" alt="Ghost Host" width='133' height='29'></a></div>
-				<nav class='header-container_top-line__nav'>
+				<nav class="header-container_top-line__nav">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Domain</a></li>
@@ -28,11 +29,11 @@
 				</nav>
 			</div> <!-- END .header-container_top-line -->
 			<div class="header-container_text">
-				<h1>hello!</h1>
-				<p>We love our work...</p>
-				<p>And We're taking it seriously...</p>
+				<strong class="h1">hello!</strong>
+				<span>We love our work...</span>
+				<span>And We're taking it seriously...</span>
 			</div>
-		</div> <!-- END .header-container-->
+		</div> <!-- END .header-container container-->
 		<div class="header-member">
 			<div class="header-member_login"><a href="#">login</a></div>
 			<div class="header-member_register"><a href="#">register</a></div>
@@ -46,8 +47,8 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
 			<form class="domain-form" action="handler.php">
 				<span class="domain-form_span">www.</span>
-				<input class="domain-form_input" type="text" placeholder="What do you want?">
-				<select name="domain-form_select" id="domain-form_select">
+				<input class="domain-form_input" type="text" name="domain" placeholder="What do you want?">
+				<select name="domain_select" id="domain_select">
 					<option selected value=".com">.com</option>
 					<option value=".net">.net</option>
 					<option value=".org">.org</option>
@@ -73,14 +74,14 @@
 
 		<!-- PACKAGES -->
 		<section class="packages">
-			<div class="packages-container">
+			<div class="packages-container container">
 				<div class="package basic-package">
-					<div class="package-icon"><i class="fa fa-anchor" aria-hidden="true"></i></div>
+					<div class="package-icon"><i class="fa fa-anchor" aria-hidden="true"></i><span></span></div>
 					<h4>basic package</h4>
 					<div class="package-price">
 						<p>Disk Space (GB)<span>50</span></p>
 						<p>Subdomains<span>50</span></p>
-						<p>Transfer ()GB<span>50</span></p>
+						<p>Transfer (GB)<span>50</span></p>
 						<p>Data base<span>1</span></p>
 						<p>Dashboards<span>1</span></p>
 						<p>Control Panel & FTP</p>
@@ -91,12 +92,12 @@
 				</div> <!-- END .basic-package -->
 
 				<div class="package normal-package">
-					<div class="package-icon"><i class="fa fa-star-half-o" aria-hidden="true"></i></div>
+					<div class="package-icon package-icon_normal"><i class="fa fa-star-half-o" aria-hidden="true"></i><span></span></div>
 					<h4>normal package</h4>
 					<div class="package-price">
 						<p>Disk Space (GB)<span>100</span></p>
 						<p>Subdomains<span>100</span></p>
-						<p>Transfer ()GB<span>100</span></p>
+						<p>Transfer (GB)<span>100</span></p>
 						<p>Data base<span>2</span></p>
 						<p>Dashboards<span>2</span></p>
 						<p>Control Panel & FTP</p>
@@ -107,12 +108,12 @@
 				</div> <!-- END .normal-package -->
 
 				<div class="package big-package">
-					<div class="package-icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+					<div class="package-icon"><i class="fa fa-star" aria-hidden="true"></i><span></span></div>
 					<h4>big package</h4>
 					<div class="package-price">
 						<p>Disk Space (GB)<span>150</span></p>
 						<p>Subdomains<span>150</span></p>
-						<p>Transfer ()GB<span>150</span></p>
+						<p>Transfer (GB)<span>150</span></p>
 						<p>Data base<span>4</span></p>
 						<p>Dashboards<span>4</span></p>
 						<p>Control Panel & FTP</p>
@@ -124,6 +125,7 @@
 
 				<div class="package biggest-package">
 					<div class="package-icon"><i class="fa fa-diamond" aria-hidden="true"></i></div>
+					<!-- <canvas width="60" height="60"></canvas> -->
 					<h4>biggest package</h4>
 					<div class="package-price">
 						<p>Disk Space (GB)<span>250</span></p>
@@ -137,10 +139,10 @@
 					<p class="package-cost"><sup>$</sup>70<span>/Mo</span></p>
 					<a href="#">select plan</a>
 				</div> <!-- END .biggest-package -->
-			</div> <!-- END .packages-container -->
+			</div> <!-- END .packages-container container-->
 		</section>
 		<section class="aboutUs">
-			<div class="about">
+			<div class="about container">
 				<article class="about-discription">
 					<h2>About <span>Us</span></h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -151,7 +153,7 @@
 				</article>
 				<div class="about-persons">
 					<div class="about-persons_item">
-						<img src="img/about/Jonny-1.jpg" alt="Jonny Doe" width="90" height="90">
+						<img src="img/about/about-PERSON-1.jpg" alt="Jonny Doe" width="90" height="90">
 						<p class="about-persons_item__name">Jonny Doe</p>
 						<p class="about-persons_item__profession">Designer</p>
 						<div class="about-persons_item__social">
@@ -162,7 +164,7 @@
 					</div> <!-- END .about-persons_item -->
 
 					<div class="about-persons_item">
-						<img src="img/about/Jonny-2.jpg" alt="Jonny Doe" width="90" height="90">
+						<img src="img/about/about-PERSON-2.jpg" alt="Jonny Doe" width="90" height="90">
 						<p class="about-persons_item__name">John Doe</p>
 						<p class="about-persons_item__profession">Designer</p>
 						<div class="about-persons_item__social">
@@ -173,7 +175,7 @@
 					</div> <!-- END .about-persons_item -->
 
 					<div class="about-persons_item">
-						<img src="img/about/Jonny-3.jpg" alt="Jonny Doe" width="90" height="90">
+						<img src="img/about/about-PERSON-3.jpg" alt="Jonny Doe" width="90" height="90">
 						<p class="about-persons_item__name">Johnathan Doe</p>
 						<p class="about-persons_item__profession">Designer</p>
 						<div class="about-persons_item__social">
@@ -192,25 +194,104 @@
 			<div class="owl-carousel comments_owl-carousel">
 				<div class="comments-item">
 					<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
-interdum dolor pulvinar vitae.”</p>
+					interdum dolor pulvinar vitae.”</p>
+					<span>John Doe</span>
 				</div>
 				<div class="comments-item">
 					<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
-interdum dolor pulvinar vitae.”</p>
+					interdum dolor pulvinar vitae.”</p>
+					<span>Jonny Doe</span>
 				</div>
 				<div class="comments-item">
 					<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
-interdum dolor pulvinar vitae.”</p>
+					interdum dolor pulvinar vitae.”</p>
+					<span>Johnathan Doe</span>
 				</div>
 			</div>
 
 		</section>	<!-- END .comments -->
+
+		<!-- FUNCTION -->
+		<section class="function">
+			<div class="function-container container">
+				<a href="#" class="function-item fast-servers">
+					<i class="fa fa-bolt" aria-hidden="true"></i>
+					<h5>Fast Servers</h5>
+					<p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+				</a>
+				<a href="#" class="function-item cloud-servers">
+					<i class="fa fa-cloud" aria-hidden="true"></i>
+					<h5>Cloud Servers</h5>
+					<p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+				</a>
+				<a href="#" class="function-item domain-transfer">
+					<i class="fa fa-arrows" aria-hidden="true"></i>
+					<h5>Domain Transfer</h5>
+					<p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+				</a>
+				<a href="#" class="function-item live-support">
+					<i class="fa fa-comments" aria-hidden="true"></i>
+					<h5>Live Support</h5>
+					<p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+				</a>				
+			</div> <!-- END .function-container container -->
+		</section>	<!-- END .function -->
 	</main>
-	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-<script src="libs/jQuery-3.3.1/jquery.min.js"></script>
-<script src="libs/owl.carousel.2.1.0/owl.carousel.min.js"></script>
+
+	<footer class="footer">
+		<div class="footer-container container">
+			<div class="footer-container_top-line">
+				<div class="footer-container_top-line__logo"><a href="#"><img src="img/footer/footer-LOGO.png" alt="Ghost Host" width='133' height='29'></a></div>
+				<nav class="footer-container_top-line__nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Policy</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div> <!-- END .footer-container_top-line -->
+			<div class="footer-container_bottom-line">
+				<div class="area area1">
+					<p>Lorem ipsum dolor sit amet, consecteteeseurı
+					adipiscing elit. Donec mollis commodoeesene 
+					que, non commodo risus volutpat vel.
+					</p>
+					<p class="copyright">Design by <span>Mert Can Eyriyer</span>.</p>
+				</div>
+				<div class="area area2">
+					<ul class="area2_first-ul">
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Account</a></li>
+						<li><a href="#">Product Catalog</a></li>
+						<li><a href="#">Shortcodes</a></li>
+					</ul>
+					<ul class="area2_second-ul">
+						<li><a href="#">Site Map</a></li>
+						<li><a href="#">Whois Search</a></li>
+						<li><a href="#">Web Mail</a></li>
+						<li><a href="#">Find Domain</a></li>
+					</ul>
+				</div>
+				<div class="area area3">
+					<div class="area3-context">
+						<a href="tel:0000-0000-0000"><i class="fa fa-phone" aria-hidden="true"></i><span data-title="Call Us Free">0000-0000-0000</span></a>
+						<a href="mailto:informationteam@ghosthost.com"><i class="fa fa-envelope" aria-hidden="true"></i><span data-title="Contact Us by Email">informationteam@ghosthost.com</span></a>
+						<p>Lorem Ipsum Street, Lorem Avenue, 
+						Lorem Ipsum </p>
+					</div>
+				</div>
+			</div>
+			
+		</div> <!-- END .footer-container container-->
+	</footer>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- <script src="libs/jQuery-3.3.1/jquery.min.js"></script> -->
+	<script src="libs/owl.carousel.2.1.0/owl.carousel.min.js"></script>
+	<script src="libs/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+	<script src="js/index.js"></script>
 
 </body>
 </html>

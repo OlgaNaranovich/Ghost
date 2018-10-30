@@ -1,22 +1,28 @@
 $(document).ready(function(){
-  $(".comments_owl-carousel").owlCarousel({
-  	loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
-    }
-  });
+	$(".comments_owl-carousel").owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 10,
+		dots: true,
+		smartSpeed: 1000
+		// responsiveClass:true,
+		// responsive:{
+		//     0:{
+		//         items:1,
+		//         nav:true
+		//     },
+		//     600:{
+		//         items:3,
+		//         nav:false
+		//     },
+		//     1000:{
+		//         items:5,
+		//         nav:true,
+		//         loop:false
+		//     }
+		// }
+	});
+
+	$('#domain_select').niceSelect();
 });
+
