@@ -336,6 +336,116 @@ body {
   display: block;
 }
 
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens*/
+/* Medium Devices, Desktops*/
+/* Small Devices, Tablets*/
+@media screen and (max-width: 768px) {
+  body .header-container_text.header-container_text-sm {
+    height: 68%;
+  }
+  body .header-container_top-line {
+    flex-direction: column;
+    border-bottom-color: transparent;
+  }
+  body .header-container_top-line__logo {
+    margin-bottom: 25px;
+  }
+  body .header-container_top-line__logo img {
+    width: 266px;
+    height: 58px;
+  }
+  body .header-container_top-line__nav ul {
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  body .header-container_top-line__nav ul li {
+    margin: 0 35px 0 35px;
+  }
+  body .header-container_top-line__nav ul li a {
+    padding-top: 30px;
+    display: block;
+    font-size: 1.2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+  }
+  body .header-container_top-line__nav ul li a:hover {
+    border-top: 1px solid white;
+    border-bottom-color: transparent;
+  }
+}
+/* Extra Small Devices, Phones*/
+@media screen and (max-width: 480px) {
+  body .packages-container {
+    justify-content: space-evenly;
+  }
+  body .packages-container .package {
+    width: 30%;
+  }
+  body .packages-container .package:not(:nth-child(-n + 2)) {
+    display: none;
+  }
+  body .packages .more-packages.button {
+    display: block;
+  }
+  body .aboutUs .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  body .aboutUs .about-discription {
+    text-align: center;
+    background-image: none;
+  }
+  body .aboutUs .about-discription p {
+    padding: 0;
+  }
+  body .aboutUs .about-persons {
+    width: 80%;
+    padding: 30px 0;
+  }
+  body .aboutUs .about-persons_item img {
+    width: 200px;
+    height: 200px;
+  }
+  body .aboutUs .about-persons_item p {
+    font-size: 1.5rem;
+  }
+  body .aboutUs .about-persons_item__social {
+    font-size: 1.5rem;
+  }
+  body .function-container {
+    width: 60%;
+  }
+  body .footer-container_top-line {
+    justify-content: center;
+  }
+  body .footer-container_top-line__logo {
+    padding-right: 15%;
+  }
+  body .footer-container_bottom-line {
+    padding: 15px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .footer-container_bottom-line .area {
+    font-size: 2rem;
+    border: none;
+    text-align: center;
+  }
+  body .footer-container_bottom-line .area p {
+    padding: 0;
+  }
+  body .footer-container_bottom-line .area3 {
+    justify-content: center;
+  }
+}
+/* Custom, iPhone Retina*/
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina*/
+/* Extra Small Devices, Phones*/
+/* Small Devices, Tablets*/
+/* Medium Devices, Desktops*/
+/* Large Devices, Wide Screens*/
 .header {
   background-image: url(../img/header/header-BG.jpg);
   background-size: cover;
@@ -374,6 +484,10 @@ body {
   justify-content: space-between;
   padding: 32px 4px 25px 4px;
 }
+.header-container_top-line__logo img {
+  width: 133px;
+  height: 29px;
+}
 .header-container_top-line__nav ul {
   display: -webkit-flex;
   display: -moz-flex;
@@ -411,7 +525,6 @@ body {
 }
 .header-container_text span {
   font-family: "Georgia-Italic";
-  font-style: italic;
   font-size: 2rem;
   margin-top: 10px;
 }
@@ -684,9 +797,12 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .packages-container {
+  max-height: 765px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -892,10 +1008,24 @@ body {
 .packages-container .biggest-package a:hover {
   color: #1abc9c;
 }
+.packages .more-packages {
+  display: none;
+  color: #282828;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+  padding: 10px 25px;
+  margin: 30px auto;
+  line-height: 1;
+  border-radius: 3px;
+}
+.packages .more-packages:hover {
+  box-shadow: 0 0 10px #cdcdcd;
+  border-color: #cdcdcd;
+}
 
 .aboutUs {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -1088,7 +1218,7 @@ body {
 
 .footer {
   background-color: #2a2a2a;
-  height: 294px;
+  min-height: 294px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;

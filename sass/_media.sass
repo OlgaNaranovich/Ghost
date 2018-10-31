@@ -8,9 +8,90 @@
 
 /* Small Devices, Tablets*/
 @media screen and (max-width: 768px)
-	
+	body
+		.header
+			&-container
+				&_text.header-container_text-sm
+					height: 68%
+			&-container
+				&_top-line
+					flex-direction: column
+					border-bottom-color: transparent
+					&__logo
+						margin-bottom: 25px
+						img
+							width: 266px
+							height: 58px
+					&__nav
+						ul
+							justify-content: center
+							border-top: 1px solid rgba(255, 255, 255, 0.15)
+							li 
+								margin: 0 35px 0 35px
+								a 
+									padding-top: 30px
+									display: block
+									font-size: 1.2rem
+									border-top: 1px solid rgba($white, 0)
+								a:hover
+									border-top: 1px solid rgba($white, 1)
+									border-bottom-color: transparent
+
 /* Extra Small Devices, Phones*/
 @media screen and (max-width: 480px) 
+
+	body
+		.packages
+			&-container
+				justify-content: space-evenly
+				.package
+					width: 30%
+				.package:not(:nth-child(-n + 2))
+					display: none
+			.more-packages.button
+				display: block
+		.aboutUs
+			.about
+				flex-direction: column
+				align-items: center
+				padding: 50px 0
+				&-discription
+					text-align: center
+					background-image: none
+					p 
+						padding: 0
+				&-persons
+					width: 80%
+					padding: 30px 0
+					&_item
+						img 
+							width: 200px
+							height: 200px
+						p 
+							font-size: 1.5rem
+						&__social
+							font-size: 1.5rem
+		.function-container
+			width: 60%
+		.footer
+			&-container_top-line
+				justify-content: center
+				&__logo
+					padding-right: 15%
+			&-container_bottom-line
+				padding: 15px 0
+				flex-direction: column
+				align-items: center
+				.area
+					font-size: 2rem
+					border: none
+					text-align: center
+					p
+						padding: 0
+				.area3 
+					justify-content: center
+
+			
 
 /* Custom, iPhone Retina*/
 @media screen and (max-width: 320px) 
