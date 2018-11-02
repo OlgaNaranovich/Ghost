@@ -8,19 +8,18 @@
 			&-container
 				&_text.header-container_text-sm
 					height: 68%
-			&-container
 				&_top-line
 					flex-direction: column
 					border-bottom-color: transparent
 					&__logo
-						margin-bottom: 25px
+						padding-bottom: 25px
+						border-bottom: 1px solid rgba(255, 255, 255, 0.15)
 						img
 							width: 266px
 							height: 58px
 					&__nav
 						ul
 							justify-content: center
-							border-top: 1px solid rgba(255, 255, 255, 0.15)
 							li 
 								margin: 0 35px 0 35px
 								a 
@@ -36,12 +35,12 @@
 				form, table
 					width: 100%
 			
-@media screen and (max-width: 1180px)
+@media screen and (max-width: 1100px)
 		
 	body
 		.packages
 				&-container
-					width: 85%
+					width: 90% 
 
 /* Medium Devices, Desktops*/
 @media screen and (max-width: 992px) 
@@ -114,7 +113,17 @@
 /* Small Devices, Tablets*/
 @media screen and (max-width: 768px)
 	
-
+	body
+		.toggle-menu
+			display: block
+		.header
+			&-container
+				&_top-line
+					flex-direction: column
+					border-bottom-color: transparent
+					&__nav
+						display: none
+						
 /* Extra Small Devices, Phones*/
 @media screen and (max-width: 480px) 
 
