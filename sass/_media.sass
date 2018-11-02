@@ -2,12 +2,7 @@
 
 /* Large Devices, Wide Screens*/
 @media screen and (max-width: 1200px) 
-
-/* Medium Devices, Desktops*/
-@media screen and (max-width: 992px) 
-
-/* Small Devices, Tablets*/
-@media screen and (max-width: 768px)
+	
 	body
 		.header
 			&-container
@@ -36,10 +31,22 @@
 								a:hover
 									border-top: 1px solid rgba($white, 1)
 									border-bottom-color: transparent
+		main
+			.domain
+				form, table
+					width: 100%
+			
+@media screen and (max-width: 1180px)
+		
+	body
+		.packages
+				&-container
+					width: 85%
 
-/* Extra Small Devices, Phones*/
-@media screen and (max-width: 480px) 
-
+/* Medium Devices, Desktops*/
+@media screen and (max-width: 992px) 
+	.container
+		width: 95%
 	body
 		.packages
 			&-container
@@ -58,21 +65,23 @@
 				&-discription
 					text-align: center
 					background-image: none
+					width: 80%
 					p 
 						padding: 0
 				&-persons
 					width: 80%
 					padding: 30px 0
+					justify-content: space-around
 					&_item
-						img 
-							width: 200px
-							height: 200px
+						// img 
+						// 	width: 200px
+						// 	height: 200px
 						p 
-							font-size: 1.5rem
+							font-size: 1.2rem
 						&__social
-							font-size: 1.5rem
+							font-size: 1.3rem
 		.function-container
-			width: 60%
+			width: 85%
 		.footer
 			&-container_top-line
 				justify-content: center
@@ -80,16 +89,36 @@
 					padding-right: 15%
 			&-container_bottom-line
 				padding: 15px 0
-				flex-direction: column
+				// flex-direction: column
 				align-items: center
+				flex-wrap: wrap
+				justify-content: space-around
 				.area
 					font-size: 2rem
 					border: none
 					text-align: center
 					p
 						padding: 0
+				.area2
+					width: 50%
+					ul
+						li 
+							&::before
+								top: 16px
+					ul:first-child
+						border-left: 1px solid rgba(205, 205, 205, .1)
 				.area3 
 					justify-content: center
+					width: 45%
+
+/* Small Devices, Tablets*/
+@media screen and (max-width: 768px)
+	
+
+/* Extra Small Devices, Phones*/
+@media screen and (max-width: 480px) 
+
+	
 
 			
 

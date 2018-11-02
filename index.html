@@ -44,38 +44,42 @@
 	<main>
 		<!-- DOMAIN -->
 		<section class="domain">
-			<h3>Would you like to buy a new domain ?</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
-			<form class="domain-form" action="handler.php">
-				<span class="domain-form_span">www.</span>
-				<input class="domain-form_input" type="text" name="domain" placeholder="What do you want?">
-				<select name="domain_select" id="domain_select">
-					<option selected value=".com">.com</option>
-					<option value=".net">.net</option>
-					<option value=".org">.org</option>
-				</select>
-			</form>
-			<table class="domain-table">
-				<tbody>
-					<tr>
-						<td class="td-up">.COM</td>
-						<td class="td-up">1 Year</td>
-						<td class="td-up">$9.00 USD</td>
-						<td class="td-up">Transfer Price No</td>
-					</tr>
-					<tr>
-						<td>.NET</td>
-						<td>1 Year</td>
-						<td>$9.00 USD</td>
-						<td>Transfer Price No</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="domain-container container">
+				<h3>Would you like to buy a new domain ?</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
+				<form class="domain-container_form" action="handler.php">
+					<span class="domain-container_form__span">www.</span>
+					<input class="domain-container_form__input" type="text" name="domain" placeholder="What do you want?">
+					<select name="domain-container_form__select" id="domain_select">
+						<option selected value=".com">.com</option>
+						<option value=".net">.net</option>
+						<option value=".org">.org</option>
+					</select>
+				</form>
+				<table class="domain-container_form__table">
+					<tbody>
+						<tr>
+							<td class="td-up">.COM</td>
+							<td class="td-up">1 Year</td>
+							<td class="td-up">$9.00 USD</td>
+							<td class="td-up">Transfer Price No</td>
+						</tr>
+						<tr>
+							<td>.NET</td>
+							<td>1 Year</td>
+							<td>$9.00 USD</td>
+							<td>Transfer Price No</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- END .domain-container -->
 		</section> <!-- END .domain -->
 
 		<!-- PACKAGES -->
 		<section class="packages">
+			<div class="packages-overflow"></div>
 			<div class='packages-container container'>
+
 				<div class="package basic-package">
 					<div class="package-icon"><i class="fa fa-anchor" aria-hidden="true"></i><span></span></div>
 					<h4>basic package</h4>
@@ -91,8 +95,6 @@
 					<p class="package-cost"><sup>$</sup>15<span>/Mo</span></p>
 					<a href="#">select plan</a>
 				</div> <!-- END .basic-package -->
-
-
 
 				<div class="package normal-package">
 					<div class="package-icon package-icon_normal"><i class="fa fa-star-half-o" aria-hidden="true"></i><span></span></div>
@@ -146,6 +148,7 @@
 			</div> <!-- END .packages-container container-->
 			<a href="#" class="more-packages button">more packages</a>
 		</section> <!-- END section packages -->
+
 		<section class="aboutUs">
 			<div class="about container">
 				<article class="about-discription">
@@ -195,25 +198,26 @@
 
 		<!-- COMMENTS -->
 		<section class="comments">
-			
-			<div class="owl-carousel comments_owl-carousel">
-				<div class="comments-item">
-					<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
-					interdum dolor pulvinar vitae.”</p>
-					<span>John Doe</span>
-				</div>
-				<div class="comments-item">
-					<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
-					interdum dolor pulvinar vitae.”</p>
-					<span>Jonny Doe</span>
-				</div>
-				<div class="comments-item">
-					<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
-					interdum dolor pulvinar vitae.”</p>
-					<span>Johnathan Doe</span>
-				</div>
+			<div class="comments-overflow"></div>
+			<div class="comments-container container">
+				<div class="owl-carousel comments_owl-carousel">
+					<div class="comments-item">
+						<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
+						interdum dolor pulvinar vitae.”</p>
+						<span>John Doe</span>
+					</div>
+					<div class="comments-item">
+						<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
+						interdum dolor pulvinar vitae.”</p>
+						<span>Jonny Doe</span>
+					</div>
+					<div class="comments-item">
+						<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
+						interdum dolor pulvinar vitae.”</p>
+						<span>Johnathan Doe</span>
+					</div>
+				</div> <!-- END .comments_owl-carousel -->
 			</div>
-
 		</section>	<!-- END .comments -->
 
 		<!-- FUNCTION -->

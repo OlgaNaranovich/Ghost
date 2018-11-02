@@ -25,7 +25,7 @@
 	&::after
 		content: ""
 		position: absolute
-		top: -15px
+		top: -75%
 		left: 50%
 		width: 5px
 		height: 5px
@@ -34,12 +34,6 @@
 		border-bottom: 1px solid rgba($white, .3)
 		transform: rotate(45deg)
 		opacity: 0   // END tooltips
-// canvas
-// 	position: absolute
-// 	z-index: 10
-// 	top: 30px
-// 	left: 50%
-// 	transform: translate(-50%)
 h1, strong.h1
 	font-size: 4.5rem
 	font-family: "MyriadPro-Bold", sans-serif
@@ -79,7 +73,8 @@ li
 	&:focus
 		outline: none
 html
-	width: 1600px
+	max-width: 1600px
+	width: 100%
 body
 	text-align: center
 	background-color: $white
