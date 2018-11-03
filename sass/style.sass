@@ -7,6 +7,55 @@
 // HEADER
 .toggle-menu
 	display: none
+
+// MOBILE TOGGLE-MENU
+
+.toggle-menu
+	display: none
+	width: 28px
+	height: 28px
+	top: 40px
+	right: 5%
+	position: absolute
+	z-index: 11
+	span
+		&:after, &:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 9px
+		&:after
+			top: 18px
+			width: 100%
+			height: 3px
+			background-color: $white
+			transition: all 0.3s
+			backface-visibility: hidden
+			border-radius: 2px
+		position: relative
+		display: block
+		width: 100%
+		height: 3px
+		background-color: $white
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+		&:before
+			width: 100%
+			height: 3px
+			background-color: $white
+			transition: all 0.3s
+			backface-visibility: hidden
+			border-radius: 2px
+	&.on span
+		background-color: transparent
+		&:before
+			transform: rotate(45deg) translate(-1px, 0px)
+		&:after
+			transform: rotate(-45deg) translate(6px, -7px)
+
+// END MOBILE TOGGLE-MENU
+
 .header
 	background-image: url(../img/header/header-BG.jpg)
 	background-size: cover
@@ -62,7 +111,8 @@
 						a:hover
 							color: darken($white, 18%)
 							border-bottom: 1px solid rgba($white, 1)
-			.toggle
+			
+			.toggle   
 				display: block
 				position: absolute
 				top: 0
@@ -71,9 +121,21 @@
 				bottom: 0
 				background-color: rgba(#000, .9)
 				height: 100vh
-				width: 100vw
+				width: 100%
 				ul 
 					flex-direction: column
+					li 
+						a
+							display: block
+							padding: 30px 0 25px
+							border-top: none
+							border-bottom: 1px solid rgba($white, 0)
+							transition: $trs
+						a:hover
+							border-top: none
+							color: darken($white, 18%)
+							border-bottom: 1px solid rgba($white, 1)
+
 
 		&_text  
 			display: -webkit-flex
