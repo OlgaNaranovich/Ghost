@@ -59,6 +59,7 @@
 .header
 	background-image: url(../img/header/header-BG.jpg)
 	background-size: cover
+	background-position: center
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -90,7 +91,7 @@
 			display: flex
 			justify-content: space-between
 			padding: 32px 4px 25px 4px
-			position: relative
+			// position: relative
 			&__logo
 				img 
 					width: 133px
@@ -113,17 +114,25 @@
 							border-bottom: 1px solid rgba($white, 1)
 			
 			.toggle   
-				display: block
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
 				position: absolute
 				top: 0
 				left: 0
 				right: 0
 				bottom: 0
-				background-color: rgba(#000, .9)
+				background-color: rgba(#000, .98)
 				height: 100vh
 				width: 100%
 				ul 
 					flex-direction: column
+					padding-top: 40px
+					justify-content: space-around
+					width: 90%
 					li 
 						a
 							display: block
@@ -164,7 +173,7 @@
 		display: flex
 		height: 120px
 		width: 100%
-		z-index: 5
+		z-index: 3
 		&_login, &_register
 			width: 50%
 			position: relative
@@ -193,7 +202,7 @@
 				content: ""
 				display: block
 				height: 100%
-				width: 40px
+				width: 30px
 				background: #21424a
 				top: 0
 				right: 0
@@ -213,7 +222,7 @@
 				content: ""
 				display: block
 				height: 100%
-				width: 40px
+				width: 30px
 				background: #2fac6c
 				top: 0
 				left: 0
@@ -367,6 +376,7 @@
 			width: 13%
 			color: $color-domainText
 			position: relative
+			word-wrap: break-word
 			&:not(:last-child)::before
 					content: ""
 					width: 1px

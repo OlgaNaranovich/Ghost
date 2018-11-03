@@ -49,9 +49,9 @@
 	body
 		.packages
 			&-container
-				justify-content: space-evenly
+				justify-content: space-around
 				.package
-					width: 30%
+					width: 40%
 				.package:not(:nth-child(-n + 2))
 					display: none
 			.more-packages.button
@@ -118,15 +118,97 @@
 			display: block
 		.header
 			&-container
+				height: 650px
 				&_top-line
 					flex-direction: column
 					border-bottom-color: transparent
 					&__nav
 						display: none
-						
+			&-member
+				height: 90px
+				a
+					padding: 0
+					line-height: 4
+		.domain 
+			table
+				td 
+					height: 60px
+					line-height: 1.5
+				&:after
+					display: none
+		.packages
+			&-container
+				.package
+					width: 60%
+				.package:not(:first-child)
+					display: none
+		.aboutUs
+			.about-persons
+				flex-direction: column
+				&_item
+					padding-bottom: 30px
+		.function
+			padding: 0
+			&-container
+				flex-direction: column
+				align-items: center
+				.function-item
+					max-width: 80%
+					padding: 20px 0
+	.footer
+		&-container_top-line
+			&__logo
+				display: none
+			&__nav
+				margin: 0
+				ul 
+					li 
+						margin-left: 25px
+		&-container_bottom-line
+			flex-direction: column
+			.area.area1, .area.area2, .area.area3
+				width: 90%
+			.area.area2
+				ul
+					padding: 0 30px
+				.area2_first-ul 
+					border: none
+			.area.area3
+				.area3-context
+					max-width: 100%
 /* Extra Small Devices, Phones*/
 @media screen and (max-width: 480px) 
-
+	
+	body
+		.toggle-menu
+			top: 20px
+		.header
+			.header-container_text.header-container_text-sm
+				.h1
+					font-size: 3.5rem
+				span
+					font-size: 1.6rem
+		.domain
+			form
+				input
+					width: 35%
+		.packages
+			&-container
+				.package
+					width: 80%
+		.footer
+			&-container_top-line
+				&__nav
+					ul 
+						li 
+							margin: 0 4px
+							a 
+								font-size: .75rem
+			&-container_bottom-line
+				.area.area2
+					ul
+						padding: 0 15px
+					
 	
 
 			
