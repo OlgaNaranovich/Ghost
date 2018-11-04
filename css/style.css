@@ -350,10 +350,6 @@ body {
     padding-bottom: 25px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
-  body .header-container_top-line__logo img {
-    width: 266px;
-    height: 58px;
-  }
   body .header-container_top-line__nav ul {
     justify-content: center;
   }
@@ -391,7 +387,7 @@ body {
   body .packages-container .package {
     width: 40%;
   }
-  body .packages-container .package:not(:nth-child(-n+2)) {
+  body .packages-container .package:not(:nth-child(-n + 2)) {
     display: none;
   }
   body .packages .more-packages.button {
@@ -464,7 +460,7 @@ body {
     display: block;
   }
   body .header-container {
-    height: 650px;
+    height: 550px;
   }
   body .header-container_top-line {
     flex-direction: column;
@@ -483,6 +479,7 @@ body {
   body .domain table td {
     height: 60px;
     line-height: 1.5;
+    font-size: 0.85rem;
   }
   body .domain table:after {
     display: none;
@@ -498,6 +495,9 @@ body {
   }
   body .aboutUs .about-persons_item {
     padding-bottom: 30px;
+  }
+  body .aboutUs .about-persons_item__social a {
+    padding: 10px;
   }
   body .function {
     padding: 0;
@@ -549,6 +549,9 @@ body {
   }
   body .domain form input {
     width: 35%;
+  }
+  body .domain table td {
+    font-size: 0.75rem;
   }
   body .packages-container .package {
     width: 80%;
@@ -706,7 +709,6 @@ body {
 }
 .header-container_top-line .toggle ul {
   flex-direction: column;
-  padding-top: 40px;
   justify-content: space-around;
   width: 90%;
 }
@@ -847,6 +849,7 @@ body {
   height: 50px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   text-align: left;
+  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -899,35 +902,7 @@ body {
 .domain form input:focus:-ms-input-placeholder {
   color: transparent;
 }
-.domain form select {
-  position: relative;
-  height: 30px;
-  border: none;
-  color: #cdcdcd;
-  outline: none;
-  width: 85px;
-  float: right;
-  border-left: 1px solid #cdcdcd;
-  margin-top: 10px;
-  padding: 0 12px;
-  font-family: "Lato-Light", sans-serif;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  background-image: url(../img/domain/arrow-down.png);
-  background-repeat: no-repeat;
-  background-position: 60px 13px;
-}
-.domain form select::after {
-  content: "";
-  font-family: "FontAwesome";
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #cdcdcd;
-}
-.domain form select option {
+.domain form input option {
   color: #cdcdcd;
 }
 .domain form .nice-select {

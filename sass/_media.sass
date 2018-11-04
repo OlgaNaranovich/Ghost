@@ -14,9 +14,6 @@
 					&__logo
 						padding-bottom: 25px
 						border-bottom: 1px solid rgba(255, 255, 255, 0.15)
-						img
-							width: 266px
-							height: 58px
 					&__nav
 						ul
 							justify-content: center
@@ -72,9 +69,6 @@
 					padding: 30px 0
 					justify-content: space-around
 					&_item
-						// img 
-						// 	width: 200px
-						// 	height: 200px
 						p 
 							font-size: 1.2rem
 						&__social
@@ -118,7 +112,7 @@
 			display: block
 		.header
 			&-container
-				height: 650px
+				height: 550px
 				&_top-line
 					flex-direction: column
 					border-bottom-color: transparent
@@ -134,6 +128,7 @@
 				td 
 					height: 60px
 					line-height: 1.5
+					font-size: .85rem
 				&:after
 					display: none
 		.packages
@@ -147,6 +142,9 @@
 				flex-direction: column
 				&_item
 					padding-bottom: 30px
+					&__social
+						a 
+							padding: 10px
 		.function
 			padding: 0
 			&-container
@@ -192,6 +190,9 @@
 			form
 				input
 					width: 35%
+			table
+				td 
+					font-size: .75rem
 		.packages
 			&-container
 				.package
@@ -208,10 +209,6 @@
 				.area.area2
 					ul
 						padding: 0 15px
-					
-	
-
-			
 
 /* Custom, iPhone Retina*/
 @media screen and (max-width: 320px) 

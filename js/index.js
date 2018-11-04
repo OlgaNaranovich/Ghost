@@ -7,7 +7,6 @@ function toggleMenu() {
 	} else		
 		menu.classList.remove("toggle");
 		
-
 	if (!tm.classList.contains("on")) {
 		tm.classList.add("on");
 	} else

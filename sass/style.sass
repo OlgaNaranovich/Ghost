@@ -4,12 +4,12 @@
 @import '../libs/jquery-nice-select-1.1.0/scss/nice-select'
 @import "media"
 
-// HEADER
-.toggle-menu
-	display: none
+
+
 
 // MOBILE TOGGLE-MENU
-
+.toggle-menu
+	display: none
 .toggle-menu
 	display: none
 	width: 28px
@@ -53,8 +53,9 @@
 			transform: rotate(45deg) translate(-1px, 0px)
 		&:after
 			transform: rotate(-45deg) translate(6px, -7px)
-
 // END MOBILE TOGGLE-MENU
+
+// HEADER
 
 .header
 	background-image: url(../img/header/header-BG.jpg)
@@ -79,7 +80,6 @@
 		left: 0
 		height: 100%
 	&-container
-		// width: 1200px
 		height: 945px
 		z-index: 5
 		&_top-line
@@ -91,7 +91,6 @@
 			display: flex
 			justify-content: space-between
 			padding: 32px 4px 25px 4px
-			// position: relative
 			&__logo
 				img 
 					width: 133px
@@ -130,7 +129,6 @@
 				width: 100%
 				ul 
 					flex-direction: column
-					padding-top: 40px
 					justify-content: space-around
 					width: 90%
 					li 
@@ -144,8 +142,6 @@
 							border-top: none
 							color: darken($white, 18%)
 							border-bottom: 1px solid rgba($white, 1)
-
-
 		&_text  
 			display: -webkit-flex
 			display: -moz-flex
@@ -155,7 +151,6 @@
 			height: 90%
 			justify-content: center
 			align-items: center
-			// flex-wrap: nowrap
 			flex-direction: column
 			color: $white
 			.h1
@@ -181,7 +176,6 @@
 			transition: $trs
 			a 
 				text-transform: uppercase
-				// font-family: 'Lato-Heavy', sans-serif
 				font-family: "Lato-Black_0", sans-serif
 				font-size: 1.3rem
 				display: block
@@ -254,12 +248,11 @@
 		height: 50px
 		border: 1px solid $color-domainTable
 		text-align: left
-		// display: -webkit-flex
+		display: -webkit-flex
 		display: -moz-flex
 		display: -ms-flex
 		display: -o-flex
 		display: flex
-		// justify-content: space-between
 		margin-bottom: 40px
 		display: inline-block
 		span
@@ -297,32 +290,6 @@
 				font-size: .95rem
 			&:focus:-ms-input-placeholder
 				color: transparent
-		select
-			position: relative
-			height: 30px
-			border: none
-			color: $color-domainText
-			outline: none
-			width: 85px
-			float: right
-			border-left: 1px solid $color-domainText
-			margin-top: 10px
-			padding: 0 12px
-			font-family: "Lato-Light", sans-serif
-			-webkit-appearance: none
-			-moz-appearance: none
-			appearance: none
-			background-color: transparent
-			background-image: url(../img/domain/arrow-down.png)
-			background-repeat: no-repeat
-			background-position: 60px 13px
-			&::after
-				content: "\f107"
-				font-family: "FontAwesome"
-				position: absolute
-				top: 0
-				left: 0
-				color: $color-domainText
 			option
 				color: $color-domainText
 		.nice-select
@@ -353,7 +320,6 @@
 				box-shadow: 0 0 0 2px rgba($white, 1)
 				.selected
 					font-weight: normal
-				
 	table
 		width: 74%
 		border: 1px solid $color-domainTable
@@ -396,6 +362,7 @@
 				bottom: -1px
 
 // PACKAGES
+
 .packages
 	height: 766px
 	background-color: $white
@@ -442,7 +409,6 @@
 			border-top: 5px solid $pack-yellow
 			background-color: $white
 			padding: 37px 0 25px
-			// margin-top: 5px
 			position: relative
 			box-shadow: 0 0 10px rgba(black, .06)
 			transition: $trs
@@ -480,7 +446,6 @@
 				span 
 					top: 21px
 					left: 49px
-				
 			h4
 				text-transform: uppercase
 				margin: 30px 0 12px
@@ -617,6 +582,7 @@
 			box-shadow: 0 0 10px $color-domainText
 			border-color: $color-domainText
 			text-decoration: none
+
 // ABOUT
 
 .aboutUs
@@ -629,7 +595,6 @@
 	display: flex
 	justify-content: center
 	.about
-		// width: 1200px
 		padding: 102px 0
 		color: #747474
 		background-image: url(../img/about/about-top-border.png)
@@ -748,7 +713,6 @@
 				display: inline-block
 				&:first-child
 					margin-left: 10px
-				
 			.active
 				background-color: $white
 
@@ -757,7 +721,6 @@
 .function
 	display: flex
 	justify-content: center
-	// height: 140px
 	padding: 95px 0
 	&-container
 		display: -webkit-flex
@@ -821,7 +784,6 @@
 	display: flex
 	justify-content: center
 	&-container
-		// width: 1200px
 		&_top-line
 			display: -webkit-flex
 			display: -moz-flex
@@ -878,7 +840,6 @@
 						font-family: "Lato-Heavy", sans-serif
 			.area2
 				width: 42%
-				// border-right: 1px solid #393939
 				display: flex
 				justify-content: center
 				ul 
@@ -915,7 +876,6 @@
 				padding-left: 5px
 				.area3-context
 					max-width: 76%
-					
 					a 
 						display: block
 						.fa 
